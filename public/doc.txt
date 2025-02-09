@@ -1,0 +1,20 @@
+db:
+    container_name: db_student
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: Monkai
+      MYSQL_USER: Monkai
+      MYSQL_PASSWORD: zsfa@srgd_fgsrgjmhj34
+    ports:
+      - "9906:3306"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "3000:80"
+    restart: always
+    environment:
+      PMA_HOST: db_student
+    depends_on:
+      - db

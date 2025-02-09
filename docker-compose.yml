@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  php-apache-environment:
+    container_name: Monkai_web
+    build:
+      context: ./public
+      dockerfile: Dockerfile
+    volumes:
+      - ./php:/var/www/html/
+    ports:
+      - 8000:80
+  
