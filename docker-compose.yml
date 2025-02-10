@@ -3,7 +3,7 @@ services:
   php-apache-environment:
     container_name: Monkai_web
     build:
-      context: ./public
+      context: ./src
       dockerfile: Dockerfile
     volumes:
       - ./src:/var/www/html/
@@ -11,4 +11,5 @@ services:
       bash -c "a2enmod rewrite && apache2-foreground"
     ports:
       - 8000:80
+  
   
