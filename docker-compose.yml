@@ -6,7 +6,9 @@ services:
       context: ./public
       dockerfile: Dockerfile
     volumes:
-      - ./php:/var/www/html/
+      - ./src:/var/www/html/
+    command: >
+      bash -c "a2enmod rewrite && apache2-foreground"
     ports:
       - 8000:80
   
