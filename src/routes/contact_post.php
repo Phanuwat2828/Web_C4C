@@ -12,3 +12,4 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 renderView('thank_get', array('name' => $name, 'email' => $email, 'message' => $message));
+getConnection();

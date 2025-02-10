@@ -9,11 +9,14 @@ const INDEX_ROUNTE = 'home';
 
 
 // Normalize URI
-function normalizeUri(string $uri) : string {
+function normalizeUri(string $uri): string
+{
+	// Remove query string
+    $uri = strtok($uri, '?');
     // Convert to lower case and remove trailing slashes
     $uri = strtolower(trim($uri, '/'));
     // Check if uri is empty and return index.php
-    return $uri == INDEX_URI ? INDEX_ROUNTE : $uri;
+    return $uri == INDEX_URI ? HOME_ROUTE : $uri;
 }
 
 // Page not found function
@@ -22,6 +25,8 @@ function notFound(){
     echo "404 Not Found";
     exit;
 }
+
+
 
 function getFilePath(string $uri, string $method) : string {
     return ROUTE_DIR . '/' . normalizeUri($uri) . '_' . strtolower($method) . '.php' ;
