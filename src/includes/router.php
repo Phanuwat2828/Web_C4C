@@ -16,7 +16,7 @@ function normalizeUri(string $uri): string
     // Convert to lower case and remove trailing slashes
     $uri = strtolower(trim($uri, '/'));
     // Check if uri is empty and return index.php
-    return $uri == INDEX_URI ? HOME_ROUTE : $uri;
+    return $uri == INDEX_URI ? INDEX_ROUNTE : $uri;
 }
 
 // Page not found function

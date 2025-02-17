@@ -3,9 +3,9 @@
 function getConnection(): mysqli
 {
     $hostname = '26.48.110.172';
-    $dbName = 'db_test';
-    $username = 'Mytest';
-    $password = 'MYSQL_ROOT_PASSWORD';
+    $dbName = 'test_db';
+    $username = 'test_db';
+    $password = 'test1234';
     $port = 9906;
     $conn = new mysqli($hostname, $username, $password, $dbName, $port);
     if ($conn->connect_error) {
@@ -14,3 +14,4 @@ function getConnection(): mysqli
     return $conn;
 }
 require_once DATABASE_DIR . '/students.php';
+require_once DATABASE_DIR . '/courses.php';
