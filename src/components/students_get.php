@@ -14,8 +14,6 @@
             <?= $row->last_name ?>
             <?= $row->phone_number ?>
             <?= $row->email ?>
-            <a href="/students_delete?id=<?= $row->student_id ?>" onclick="return confirmSubmission()">ลบข้อมูล</a>
-            <a href="/students_chgpwd?id=<?= $row->student_id ?>">เปลี่ยนรหัสผ่าน</a>
             <br>
     <?php
         }

@@ -10,5 +10,6 @@
         <a href='/'>Home</a>
         <a href='/contact'>Contact</a>
         <a href='/students'>Students</a>
-        <a href='/coures_new'>Coures_new</a>
+        <a href='/subject'>Subject</a>
+        <a href='/register'>Register Subject</a>
     </nav>
