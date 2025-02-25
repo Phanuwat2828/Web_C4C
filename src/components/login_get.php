@@ -11,10 +11,10 @@
             <div class="row g-0 p-3">
                 <div class="content_1" style="width: 90%; height: auto; display: flex; flex-direction: column; border-radius: 10px; margin-top:20px; margin-left:20px; justify-content: center; align-items:center;">
                     <h1 class="title">Login</h1>
-                    <form action="login.php" method="post">
+                    <form action="/login" method="post">
                         <div class="mb-3 email">
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com or nick" name="email_username">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com or nick" name="email">
                         </div>
                         <div class="password">
                             <label for="inputPassword5" class="form-label">Password</label>

@@ -1,4 +1,4 @@
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <nav>
         <a href='/'>Home</a>
         <a href='/contact'>Contact</a>
@@ -18,10 +18,13 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/Subject">Subject</a>
+                <a class="nav-link" href="/subject">Subject</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="/register">Register Subject</a>
+                <a class="nav-link" href="/registion">Registion</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link text-danger" href="/logout">Logout</a>
                 </li>
             </ul>
             </div>

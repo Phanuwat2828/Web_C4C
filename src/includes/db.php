@@ -14,3 +14,5 @@ function getConnection(): mysqli
     return $conn;
 }
 require_once DATABASE_DIR . '/students.php';
+require_once DATABASE_DIR . '/login.php';
+require_once DATABASE_DIR . '/action.php';
