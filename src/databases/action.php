@@ -9,7 +9,6 @@
         $st->bind_param("s",$en_id);
         $st->execute();
         $result = $st->get_result();
-    
     }
 
     function show_subject(){
@@ -37,5 +36,33 @@
         }
 
     }
+
+    // function test($std_id,$courses_id){
+    //     $conn = getConnection();
+    //     $sql = "SELECT COUNT(*) INTO enrollment_count 
+    //         FROM enrollment 
+    //         WHERE student_id = ? AND course_id = ?;";
+    //     $st = $conn->prepare($sql);
+    //     $st->bind_param("ss",$std_id,$courses_id);
+
+    //     $result = $st->get_result();
+
+    //     if($result>0){
+    //         exit();
+    //     }else{
+    //         $conn = getConnection();
+    //         $sql = "SELECT COUNT(*) INTO enrollment_count 
+    //             FROM enrollment 
+    //             WHERE student_id = ? AND course_id = ?;";
+    //         $st = $conn->prepare($sql);
+    //         $st->bind_param("ss",$std_id,$courses_id);
+    //     }
+    //     if ($st->execute()) {
+    //         echo "Enrollment successful!";
+    //     } else {
+    //         echo "<script>alert('". $st->error."');</script>";
+    //     }
+    // }
+
 
 ?>

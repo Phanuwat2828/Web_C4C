@@ -33,6 +33,8 @@
             return false;
         }
     }
+
+    
     function get_subject(){
         $conn = getConnection();
         $sql = "call get_subject(?)";

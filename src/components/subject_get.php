@@ -4,8 +4,7 @@
             <li class="list-group-item">Name : <?php echo $_SESSION["fname"]." ".$_SESSION["lname"]?></li>
             <li class="list-group-item">Birth : <?php echo $_SESSION["birth"]?></li>
             <li class="list-group-item">Your Phone : <?php echo $_SESSION["phone"]?></li>
-        </ul>
-
+        </ul>   
     </div>
     <div class="mt-4" style="width: 600px; margin-left:20px;">
     <ol class="list-group list-group-numbered">
@@ -13,8 +12,6 @@
 
             if($data["subject"] != []){
                 foreach($data["subject"] as $row){
-
-
                     echo '
                     
                         <li class="list-group-item d-flex justify-content-between align-items-start">

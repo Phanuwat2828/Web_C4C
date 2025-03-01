@@ -23,9 +23,20 @@
                 <li class="nav-item">
                 <a class="nav-link" href="/registion">Registion</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link text-danger" href="/logout">Logout</a>
-                </li>
+                <?php
+                     if(isset($_SESSION['timestamp'])){
+                        echo ' <li class="nav-item">
+                        <a class="nav-link text-danger" href="/logout">Logout</a>
+                        </li>   
+                        ';
+                     }else{
+                        echo ' <li class="nav-item">
+                        <a class="nav-link text-info" href="/login">Login</a>
+                        </li>   
+                        ';
+                     }
+                
+                ?>
             </ul>
             </div>
         </div>
